@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexstay HMS - Hotel Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&family=Lato:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <a class="logo" href="index.html">
+            <div class="logo-box"><img src="hotel-svgrepo-com.svg" alt=""></i></div>
+            Nexstay <span>HMS</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#modules">Modules</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#integrations">Integrations</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="dashboard.html" class="btn-g" style="text-decoration: none;">Login</a>
+            <a href="reservation.html" class="btn-p" style="text-decoration: none;"> Free Trial</a>
+        </div>
+
+    </nav>
+
+    <section class="hero">
+       
+        <div class="hero-bg"></div>
+
+        <!-- Hotel photo + overlay + floating cards -->
+        <div class="hero-visual-bg">
+            <img src="valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg" alt="Luxury Hotel Lobby" class="hero-img">
+            <div class="h-overlay"></div>
+
+            <!-- Floating notification cards -->
+            <div class="notif-card nc1">
+                <div class="nc-icon">✅</div>
+                <div class="nc-text">
+                    <strong>Room 412 Checked In</strong>
+                    <small>Just now · Front Desk</small>
+                </div>
+                <div class="nc-badge green">Live</div>
+            </div>
+            <div class="notif-card nc2">
+                <div class="nc-icon">💰</div>
+                <div class="nc-text">
+                    <strong>₹2.4L Revenue Today</strong>
+                    <small>+24% vs last Friday</small>
+                </div>
+                <div class="nc-badge gold">↑24%</div>
+            </div>
+            <div class="notif-card nc3">
+                <div class="nc-icon">📅</div>
+                <div class="nc-text">
+                    <strong>New Booking — Airbnb</strong>
+                    <small>Deluxe Suite · 3 nights</small>
+                </div>
+                <div class="nc-badge gold">New</div>
+            </div>
+        </div>
+
+
+        <!-- Main content -->
+        <div class="hero-content">
+            <!-- Left: text -->
+            <div class="hero-text">
+                <div class="hero-tag">
+                    <div class="hero-tag-dot"></div>
+                    Cloud · AI-Powered · All-in-One HMS
+                </div>
+                <h1>
+                    <span class="l1">The Smartest Way</span>
+                    <span class="l2">To Run Your Hotel</span>
+                    <span class="l3">Operations</span>
+                </h1>
+                <p class="hero-desc">Nexstay HMS unifies reservations, front desk, housekeeping, POS, channel manager,
+                    and
+                    analytics into one elegant cloud platform. Built for modern Indian hospitality.</p>
+                <div class="hero-btns">
+                    <a href="reservations.html" class="btn-hero" style="text-decoration:none;">Start Free 14-Day
+                        Trial</a>
+                    <a href="dashboard.html" class="btn-demo" style="text-decoration:none;">
+                        <div class="play-ring">▶</div>
+                        Watch 2-Min Demo
+                    </a>
+                </div>
+                <div class="hero-trust">
+                    <div class="avatars">
+                        <div class="av a1">AR</div>
+                        <div class="av a2">PS</div>
+                        <div class="av a3">VK</div>
+                        <div class="av a4">RM</div>
+                        <div class="av ax">+</div>
+                    </div>
+                    <div class="trust-copy">
+                        <strong>4,200+ properties trust Nexstay</strong>
+                        across India &amp; South Asia
+                    </div>
+                </div>
+            </div>
+            <!-- Right: dashboard preview -->
+            <div>
+                <div class="hero-dash">
+                    <div class="dash-topbar">
+                        <div class="dtb-dots">
+                            <div class="dtb-dot r"></div>
+                            <div class="dtb-dot y"></div>
+                            <div class="dtb-dot g"></div>
+                        </div>
+                        <div class="dtb-url">app.nexstayhms.com/dashboard</div>
+                    </div>
+                    <div class="dash-body">
+                        <div class="kpi-row">
+                            <div class="kpi">
+                                <div class="kpi-l">Occupancy</div>
+                                <div class="kpi-v">87%</div>
+                                <div class="kpi-c up">↑ +6%</div>
+                            </div>
+                            <div class="kpi">
+                                <div class="kpi-l">Revenue</div>
+                                <div class="kpi-v">₹2.4L</div>
+                                <div class="kpi-c up">↑ +12%</div>
+                            </div>
+                            <div class="kpi">
+                                <div class="kpi-l">Pending C/O</div>
+                                <div class="kpi-v">14</div>
+                                <div class="kpi-c dn">↓ 3 late</div>
+                            </div>
+                        </div>
+                        <div class="dash-row2">
+                            <div class="dw">
+                                <div class="dw-title">Room Status — All Floors</div>
+                                <div class="rdots">
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd vac"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd rsv"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd mnt"></div>
+                                    <div class="rd vac"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd vac"></div>
+                                    <div class="rd rsv"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd mnt"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd vac"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd rsv"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd vac"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd occ"></div>
+                                    <div class="rd mnt"></div>
+                                    <div class="rd occ"></div>
+                                </div>
+                            </div>
+                            <div class="dw act-list">
+                                <div class="dw-title">Live Activity</div>
+                                <div class="act-i">
+                                    <div class="act-dot g"></div>Rm 301 Check-In
+                                </div>
+                                <div class="act-i">
+                                    <div class="act-dot o"></div>Booking.com +1
+                                </div>
+                                <div class="act-i">
+                                    <div class="act-dot r"></div>Suite 501 C/O
+                                </div>
+                                <div class="act-i">
+                                    <div class="act-dot o"></div>Inv #4821 Paid
+                                </div>
+                                <div class="act-i">
+                                    <div class="act-dot g"></div>HK Rm 204 Done
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-cue" onclick="document.querySelector('.stats-bar').scrollIntoView({behavior:'smooth'})">
+            <span>Scroll</span>
+            <div>↓</div>
+        </div>
+
+
+
+    </section>
+    <div class="stats-bar">
+        <div class="stats-inner">
+            <div class="stat-item reveal">
+                <span class="stat-num" data-val="4200" data-sfx="+">0<span class="g">+</span></span>
+                <span class="stat-label">Properties Onboarded</span>
+                <div class="stat-sub">Across 18 Indian states</div>
+            </div>
+            <div class="stat-item reveal d1">
+                <span class="stat-num" data-val="98.7" data-sfx="%" data-dec="1">0<span class="g">%</span></span>
+                <span class="stat-label">Platform Uptime SLA</span>
+                <div class="stat-sub">Enterprise-grade reliability</div>
+            </div>
+            <div class="stat-item reveal d2">
+                <span class="stat-num" data-val="32" data-sfx="%">0<span class="g">%</span></span>
+                <span class="stat-label">Avg RevPAR Uplift</span>
+                <div class="stat-sub">Within first 90 days</div>
+            </div>
+            <div class="stat-item reveal d3">
+                <span class="stat-num" data-val="100" data-sfx="+">0<span class="g">+</span></span>
+                <span class="stat-label">OTA Integrations</span>
+                <div class="stat-sub">Real-time 2-way sync</div>
+            </div>
+            <div class="stat-item reveal d4">
+                <span class="stat-num" data-val="24" data-sfx="/7">0<span class="g">/7</span></span>
+                <span class="stat-label">Expert Support</span>
+                <div class="stat-sub">Phone · Chat · Email</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ FEATURES ═══ -->
+    <div class="features-wrap" id="features">
+        <div class="section">
+            <div class="reveal">
+                <div class="sec-tag">Core Capabilities</div>
+            </div>
+            <h2 class="sec-h reveal d1">Everything Your Property<br><em>Needs to Thrive</em></h2>
+            <p class="sec-p reveal d2">From boutique guesthouses to multi-property chains — Nexstay HMS scales with
+                your
+                ambitions, driven by real-time data and intelligent automation.</p>
+            <div class="feat-grid reveal d2">
+                <div class="feat-card">
+                    <div class="fi-wrap">🛎️</div>
+                    <div class="feat-title">Front Desk & Reservations</div>
+                    <p class="feat-desc">Drag-and-drop booking calendar, instant room assignment, group bookings, and
+                        automated
+                        confirmation emails with real-time availability.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">🏠</div>
+                    <div class="feat-title">Housekeeping Management</div>
+                    <p class="feat-desc">Auto-assign tasks, track room cleaning status live, and empower supervisors
+                        with mobile
+                        dashboards and one-tap status updates.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">🍽️</div>
+                    <div class="feat-title">Restaurant & POS</div>
+                    <p class="feat-desc">Touch-screen tablet POS for dining, bar, and room service — integrated with
+                        billing and
+                        guest folios for seamless operations.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">📊</div>
+                    <div class="feat-title">Financial Accounting</div>
+                    <p class="feat-desc">Automate invoicing, P&L tracking, and GST-compliant billing. Generate
+                        audit-ready reports
+                        and integrate with Tally ERP.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">🌐</div>
+                    <div class="feat-title">Channel Manager</div>
+                    <p class="feat-desc">Sync rates and availability across Booking.com, Airbnb, Agoda, MakeMyTrip,
+                        Goibibo and
+                        100+ OTAs — in real time.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">📈</div>
+                    <div class="feat-title">Revenue Analytics</div>
+                    <p class="feat-desc">AI-driven pricing suggestions, occupancy trends, RevPAR benchmarking, and
+                        channel-wise
+                        performance in one unified view.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">🎪</div>
+                    <div class="feat-title">Banquet & Events</div>
+                    <p class="feat-desc">Manage venue bookings, event scheduling, catering orders, and billing for
+                        weddings,
+                        conferences, and corporate events.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">📦</div>
+                    <div class="feat-title">Inventory & Procurement</div>
+                    <p class="feat-desc">Real-time stock tracking, automated reorder alerts, supplier management, and
+                        recipe-level
+                        F&B cost control.</p>
+                </div>
+                <div class="feat-card">
+                    <div class="fi-wrap">📱</div>
+                    <div class="feat-title">Mobile Operations</div>
+                    <p class="feat-desc">Full-featured mobile app for staff — manage tasks, approve requests, and
+                        monitor property
+                        health from anywhere, anytime.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- ═══ BOOKING ENGINE ═══ -->
+  <div class="res-wrap">
+    <div class="res-layout">
+      <div>
+        <div class="reveal">
+          <div class="sec-tag">Direct Booking Engine</div>
+        </div>
+        <h2 class="sec-h reveal d1">Direct Bookings,<br><em>Zero Commission</em></h2>
+        <p class="sec-p reveal d2" style="margin-bottom:0">Embed our beautiful booking widget on your hotel website.
+          Accept direct reservations with secure payments — no OTA commission, more revenue for you.</p>
+        <ul class="res-list reveal d3">
+          <li>Mobile-optimized, fully brandable booking widget</li>
+          <li>Razorpay, CCAvenue &amp; PayU payment integration</li>
+          <li>Auto GST invoices &amp; instant booking confirmations</li>
+          <li>Promo codes, loyalty discounts &amp; early-bird rates</li>
+          <li>Multi-language &amp; multi-currency support</li>
+        </ul>
+      </div>
+      <div class="reveal d2">
+        <div class="bk-card">
+          <div class="bk-title">Quick <em>Reservation</em></div>
+          <div class="bk-sub">Check availability &amp; book instantly · No OTA fees</div>
+          <div class="room-tabs">
+            <div class="rt-btn active"><span class="re">🛏️</span>Standard</div>
+            <div class="rt-btn"><span class="re">👑</span>Deluxe</div>
+            <div class="rt-btn"><span class="re">💎</span>Suite</div>
+          </div>
+          <div class="fg"><label class="fl">Guest Name</label><input type="text" class="fi" placeholder="Full name">
+          </div>
+          <div class="fg fg-row">
+            <div><label class="fl">Check-In</label><input type="date" class="fi"></div>
+            <div><label class="fl">Check-Out</label><input type="date" class="fi"></div>
+          </div>
+          <div class="fg fg-row">
+            <div><label class="fl">Adults</label><select class="fi">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select></div>
+            <div><label class="fl">Children</label><select class="fi">
+                <option selected>0</option>
+                <option>1</option>
+                <option>2</option>
+              </select></div>
+          </div>
+          <button class="btn-book" onclick="window.location.href='reservations.html'">Check Availability &amp; Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ MODULES ═══ -->
+  <div class="modules-wrap" id="modules">
+    <div class="section">
+      <div class="reveal">
+        <div class="sec-tag">System Modules</div>
+      </div>
+      <h2 class="sec-h reveal d1">Deep Dive Into<br><em>Every Module</em></h2>
+      <p class="sec-p reveal d2">Each module is powerful standalone — and even more effective when used together.</p>
+      <div class="mod-layout">
+        <div class="mod-nav reveal">
+          <div class="mni active" onclick="showMod('pms',this)">
+            <div class="mt">Property Management</div>
+            <div class="ms">Reservations, front desk, folios</div>
+          </div>
+          <div class="mni" onclick="showMod('channel',this)">
+            <div class="mt">Channel Manager</div>
+            <div class="ms">OTA sync, rate management</div>
+          </div>
+          <div class="mni" onclick="showMod('pos',this)">
+            <div class="mt">POS & F&B</div>
+            <div class="ms">Restaurant, bar, room service</div>
+          </div>
+          <div class="mni" onclick="showMod('accounts',this)">
+            <div class="mt">Accounts & Billing</div>
+            <div class="ms">Invoicing, reports, audit</div>
+          </div>
+          <div class="mni" onclick="showMod('crm',this)">
+            <div class="mt">Guest CRM & Loyalty</div>
+            <div class="ms">Profiles, loyalty, messaging</div>
+          </div>
+          <div class="mni" onclick="showMod('hk',this)">
+            <div class="mt">Housekeeping</div>
+            <div class="ms">Tasks, tracking, assignments</div>
+          </div>
+        </div>
+        <div class="reveal d2">
+          <div class="mp active" id="panel-pms">
+            <div class="mp-title">Property Management System</div>
+            <p>The heart of Nexstay HMS. Manage every reservation, guest folio, and room status from a single intuitive
+              screen — designed for speed even during peak season rush.</p>
+            <ul class="mp-list">
+              <li>Visual drag-and-drop booking calendar with room-wise view</li>
+              <li>Individual, group &amp; corporate booking flows</li>
+              <li>Express check-in/out with digital signature capture</li>
+              <li>Multi-room, multi-guest folio management</li>
+              <li>Early check-in / late check-out &amp; waitlist handling</li>
+              <li>Daily arrival/departure reports &amp; night audit automation</li>
+              <li>Walk-in booking with instant room assignment</li>
+            </ul>
+          </div>
+          <div class="mp" id="panel-channel">
+            <div class="mp-title">Channel Manager</div>
+            <p>Stop managing OTAs manually. Nexstay syncs rates and inventory across all channels in real time —
+              eliminating double bookings and maximizing revenue.</p>
+            <ul class="mp-list">
+              <li>100+ OTA integrations: Booking.com, Airbnb, Agoda, MakeMyTrip</li>
+              <li>Real-time 2-way sync of rates and availability</li>
+              <li>Bulk rate updates with seasonal pricing rules</li>
+              <li>Channel-wise revenue and performance analytics</li>
+              <li>Restriction management: min stay, stop sell, CTA/CTD</li>
+              <li>Auto rate parity monitoring and alerts</li>
+            </ul>
+          </div>
+          <div class="mp" id="panel-pos">
+            <div class="mp-title">POS & Food & Beverage</div>
+            <p>A complete restaurant management solution built for hotels. From table ordering to room service to bar
+              billing — all linked directly to the guest folio.</p>
+            <ul class="mp-list">
+              <li>Touch-screen POS for dining, bar, pool, and room service</li>
+              <li>KOT/BOT printing to kitchen and bar printers</li>
+              <li>Table reservation and seat management</li>
+              <li>Inventory &amp; recipe costing for F&B profitability</li>
+              <li>Post charges directly to guest room folio</li>
+              <li>GST-compliant billing with split payment support</li>
+            </ul>
+          </div>
+          <div class="mp" id="panel-accounts">
+            <div class="mp-title">Accounts & Billing</div>
+            <p>Replace manual ledgers with a fully automated financial system integrated into every hotel operation —
+              from front desk to F&B to housekeeping supplies.</p>
+            <ul class="mp-list">
+              <li>Automated revenue posting and night audit</li>
+              <li>GST invoicing and e-invoicing compliance (IRN generation)</li>
+              <li>Accounts receivable &amp; city ledger management</li>
+              <li>Multi-currency billing for international guests</li>
+              <li>Tally ERP integration for accounting teams</li>
+              <li>P&L, trial balance, and audit-ready financial reports</li>
+            </ul>
+          </div>
+          <div class="mp" id="panel-crm">
+            <div class="mp-title">Guest CRM & Loyalty</div>
+            <p>Know your guests deeply. Build lasting relationships, reward loyalty, and automate personalized
+              communication that drives repeat bookings.</p>
+            <ul class="mp-list">
+              <li>Complete guest profile with full stay history and preferences</li>
+              <li>Automated pre-arrival and post-stay emails/SMS/WhatsApp</li>
+              <li>Loyalty points, membership tiers, and reward redemption</li>
+              <li>Guest feedback and NPS survey automation</li>
+              <li>Birthday, anniversary, and special occasion offer automation</li>
+              <li>Segmented marketing campaigns by guest type</li>
+            </ul>
+          </div>
+          <div class="mp" id="panel-hk">
+            <div class="mp-title">Housekeeping Management</div>
+            <p>Give your housekeeping team a superpower. Automate task assignment, track real-time room status, and
+              reduce supervisor workload with intelligent dashboards.</p>
+            <ul class="mp-list">
+              <li>Auto-assign rooms to housekeepers based on floor and workload</li>
+              <li>Real-time room status: Vacant Dirty, Occupied, Inspected, Clean</li>
+              <li>Mobile app for housekeepers to update status on the go</li>
+              <li>Supervisor inspection checklist and approval workflow</li>
+              <li>Lost &amp; found item management</li>
+              <li>Minibar consumption tracking linked to folio</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ INTEGRATIONS ═══ -->
+  <div class="int-wrap" id="integrations">
+    <div class="section" style="text-align:center;">
+      <div class="reveal">
+        <div class="sec-tag">Integrations</div>
+      </div>
+      <h2 class="sec-h reveal d1">Connects with <em>Everything</em><br>You Already Use</h2>
+      <div class="int-chips reveal d2">
+        <div class="int-chip">📅 Booking.com</div>
+        <div class="int-chip">🏠 Airbnb</div>
+        <div class="int-chip">✈️ Agoda</div>
+        <div class="int-chip">🌐 MakeMyTrip</div>
+        <div class="int-chip">🔶 Goibibo</div>
+        <div class="int-chip">🔵 Expedia</div>
+        <div class="int-chip">💳 Razorpay</div>
+        <div class="int-chip">💰 CCAvenue</div>
+        <div class="int-chip">💵 PayU</div>
+        <div class="int-chip">🏦 HDFC SmartHub</div>
+        <div class="int-chip">📊 Tally ERP</div>
+        <div class="int-chip">☁️ AWS Cloud</div>
+        <div class="int-chip">🔒 PCI DSS</div>
+        <div class="int-chip">📡 Wifi-Soft</div>
+        <div class="int-chip">📧 SendGrid</div>
+        <div class="int-chip">📱 WhatsApp Business</div>
+        <div class="int-chip">🔔 Twilio SMS</div>
+        <div class="int-chip">📝 Zoho CRM</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PRICING ═══ -->
+  <div class="pricing-wrap" id="pricing">
+    <div class="section" style="text-align:center;">
+      <div class="reveal">
+        <div class="sec-tag">Transparent Pricing</div>
+      </div>
+      <h2 class="sec-h reveal d1">Simple Plans,<br><em>No Hidden Fees</em></h2>
+      <p class="sec-p reveal d2" style="margin:0 auto 56px;">Start free, scale as you grow. Cancel anytime.</p>
+      <div class="price-grid reveal d2">
+        <div class="pc">
+          <div class="pn">Starter</div>
+          <div class="pd">Small hotels &amp; guesthouses</div>
+          <div class="pp"><sup>₹</sup>2,999<sub>/mo</sub></div>
+          <div class="pdiv"></div>
+          <ul class="pf">
+            <li class="has"><span class="chk">✓</span> Up to 30 Rooms</li>
+            <li class="has"><span class="chk">✓</span> Front Desk &amp; PMS</li>
+            <li class="has"><span class="chk">✓</span> Basic Housekeeping</li>
+            <li class="has"><span class="chk">✓</span> 3 OTA Channels</li>
+            <li><span class="crs">—</span> Restaurant POS</li>
+            <li><span class="crs">—</span> Banquet Module</li>
+            <li><span class="crs">—</span> Advanced Analytics</li>
+          </ul>
+          <button class="btn-plan" onclick="window.location.href='reservations.html'">Get Started</button>
+        </div>
+        <div class="pc ft">
+          <div class="pop">Most Popular</div>
+          <div class="pn">Professional</div>
+          <div class="pd">Growing hotels &amp; resorts</div>
+          <div class="pp"><sup>₹</sup>6,999<sub>/mo</sub></div>
+          <div class="pdiv"></div>
+          <ul class="pf">
+            <li class="has"><span class="chk">✓</span> Up to 100 Rooms</li>
+            <li class="has"><span class="chk">✓</span> Full PMS Suite</li>
+            <li class="has"><span class="chk">✓</span> Restaurant POS</li>
+            <li class="has"><span class="chk">✓</span> 50+ OTA Channels</li>
+            <li class="has"><span class="chk">✓</span> Banquet Management</li>
+            <li class="has"><span class="chk">✓</span> Revenue Analytics</li>
+            <li><span class="crs">—</span> Multi-property</li>
+          </ul>
+          <button class="btn-plan" onclick="window.location.href='reservations.html'">Start Free Trial</button>
+        </div>
+        <div class="pc">
+          <div class="pn">Enterprise</div>
+          <div class="pd">Chains &amp; large properties</div>
+          <div class="pp" style="font-size:2.2rem;padding-top:6px">Custom</div>
+          <div class="pdiv"></div>
+          <ul class="pf">
+            <li class="has"><span class="chk">✓</span> Unlimited Rooms</li>
+            <li class="has"><span class="chk">✓</span> All Modules Included</li>
+            <li class="has"><span class="chk">✓</span> Multi-property Dashboard</li>
+            <li class="has"><span class="chk">✓</span> 100+ OTA Channels</li>
+            <li class="has"><span class="chk">✓</span> White-label Option</li>
+            <li class="has"><span class="chk">✓</span> Dedicated Account Manager</li>
+            <li class="has"><span class="chk">✓</span> Custom Integrations</li>
+          </ul>
+          <button class="btn-plan" onclick="window.location.href='dashboard.html'">Contact Sales</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <div class="test-wrap">
+    <div class="section">
+      <div class="reveal">
+        <div class="sec-tag">Client Stories</div>
+      </div>
+      <h2 class="sec-h reveal d1">Trusted by <em>Hospitality Leaders</em></h2>
+      <div class="test-grid">
+        <div class="tc reveal d1">
+          <div class="stars">★★★★★</div>
+          <div class="tq">"Nexstay transformed our operations. We reduced front desk errors by 90% and revenue jumped
+            significantly within just 3 months."</div>
+          <div class="ta">
+            <div class="tav a1">AR</div>
+            <div>
+              <div class="tname">Arun Reddy</div>
+              <div class="trole">GM, The Residency Hyderabad</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d2">
+          <div class="stars">★★★★★</div>
+          <div class="tq">"The channel manager alone saved us ₹80,000 a month in OTA commissions. The support team is
+            incredibly responsive — always."</div>
+          <div class="ta">
+            <div class="tav a2">PS</div>
+            <div>
+              <div class="tname">Priya Sharma</div>
+              <div class="trole">Owner, Blue Lotus Boutique Hotel</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal d3">
+          <div class="stars">★★★★★</div>
+          <div class="tq">"We manage 4 properties across Rajasthan. Nexstay's multi-property dashboard gives complete
+            visibility. Can't imagine running without it."</div>
+          <div class="ta">
+            <div class="tav a3">VK</div>
+            <div>
+              <div class="tname">Vikram Kapoor</div>
+              <div class="trole">Director, Heritage Haveli Group</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ CTA ═══ -->
+  <div class="cta-wrap">
+    <div class="cta-in reveal">
+      <div class="cta-tag">No Credit Card Required · Setup in 24 Hours</div>
+      <h2 class="cta-h">Ready to Elevate<br><em>Your Property?</em></h2>
+      <p class="cta-sub">Join 4,200+ properties using Nexstay HMS across India and South Asia.</p>
+      <div class="cta-btns">
+        <a href="reservations.html" class="btn-cta" style="text-decoration:none;">Start Free 14-Day Trial</a>
+        <a href="dashboard.html" class="btn-cta-o" style="text-decoration:none;">Schedule a Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html">
+          <div class="logo-box"><img src="hotel-svgrepo-com.svg" alt=""></div>Nexstay <span>HMS</span>
+        </a>
+        <p>All-in-one cloud hotel management software built for modern Indian hospitality. Trusted by 4,200+ properties
+          across India and South Asia since 2019.</p>
+      </div>
+      <div class="fc">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="reservations.html">PMS</a></li>
+          <li><a href="reservations.html">Channel Manager</a></li>
+          <li><a href="reservations.html">Booking Engine</a></li>
+          <li><a href="guests.html">POS System</a></li>
+          <li><a href="dashboard.html">Mobile App</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Partner Program</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">24×7 Support</a></li>
+          <li><a href="#">Training Videos</a></li>
+          <li><a href="#">API Docs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">System Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2025 Nexstay HMS. All rights reserved.</span>
+      <span>Privacy Policy · Terms · GDPR · PCI DSS Compliant</span>
+    </div>
+  </footer>
+
+<script>
+    //Module Switcher
+    function showMod(id,el){
+        document.querySelectorAll('.mp').forEach(p=>p.classList.remove('active'));
+        document.querySelectorAll('.mni').forEach(b=>b.classList.remove('active'));
+          el.classList.add('active');
+        document.getElementById('panel-'+id).classList.add('active');
+      
+    }
+    //Room Type Tabs in Booking Engine
+    document.querySelectorAll('.rt-btn').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+            document.querySelectorAll('.rt-btn').forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+        })
+    })
+
+    //scroll reveal
+    const revealObs= new IntersectionObserver(entries=>{
+        entries.forEach(ent=>{
+            if(ent.isIntersecting){
+                ent.target.classList.add('in');
+                revealObs.unobserve(ent.target);
+            }
+        })
+    }, {threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+    //Animated Stats Counter
+    const statEls=document.querySelectorAll('.stat-num');
+    const statObs= new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+            if(!e.isIntersecting) return;
+            const el=e.target;
+            const val= parseFloat(el.dataset.val);
+            const dec= parseInt(el.dataset.dec || '0') ;
+            const goldspan= el.querySelector('.g');
+            const duration= 1800;
+            fps=60;
+            const steps= duration/(1000/fps);
+            let cur=0;
+            const inc= val/steps;
+            const timer= setInterval(()=>{
+                cur= Math.min(cur+inc,val);
+                const txt= dec > 0 ? cur.toFixed(dec) : Math.floor(cur).toLocaleString('en-IN');
+                el.childNodes[0].nodeValue= txt;
+                if(cur >= val) clearInterval(timer);
+            },1000/fps);
+             statObs.unobserve(el);
+            });
+        }, {threshold:0.5
+        })
+    statEls.forEach(el=>statObs.observe(el));
+
+    //Navbar scroll effect
+    window.addEventListener('scroll',()=>{
+        document.getElementById('navbar').style.background= window.scrollY > 60 ? 'rgba(10,10,10,0.97)' : 'rgba(10,10,10,0.75)';
+    });
+</script>
+
+</body>
+
+</html>
